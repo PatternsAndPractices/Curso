@@ -1,0 +1,11 @@
+IDE C# Express
+==============
+http://msdn.microsoft.com/es-es/library/sbht894x.aspx
+
+Manual de C#
+============
+http://msdn.microsoft.com/es-es/library/zkxk2fwf.aspx
+
+Guia del Programador C#
+=======================
+http://msdn.microsoft.com/es-es/library/67ef8sbd.aspx

@@ -1,0 +1,10 @@
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\bin\Debug\LoadXml.exe.config
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\bin\Debug\LoadXml.exe
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\bin\Debug\LoadXml.pdb
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\obj\Debug\LoadXml.csprojResolveAssemblyReference.cache
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\obj\Debug\LoadXml.csproj.CoreCompileInputs.cache
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\obj\Debug\LoadXml.exe
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\obj\Debug\LoadXml.pdb
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\bin\Debug\MessageHelper.dll
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\bin\Debug\MessageHelper.pdb
+D:\Tmp\Samples\Patterns\Patterns\LoadXml\obj\Debug\LoadXml.csproj.CopyComplete

@@ -1,0 +1,52 @@
+<Messages>
+	<MessageData>
+		<Id>1</Id>
+		<Type>Info</Type>
+		<Description>Welcome </Description>
+	</MessageData>
+	<MessageData>
+		<Id>2</Id>
+		<Type>Info</Type>
+		<Description>Data Ok</Description>
+	</MessageData>
+	<MessageData>
+		<Id>3</Id>
+		<Type>Info</Type>
+		<Description>Info Updated</Description>
+	</MessageData>
+	<MessageData>
+		<Id>4</Id>
+		<Type>Warn</Type>
+		<Description>Field requeried</Description>
+	</MessageData>
+	<MessageData>
+		<Id>5</Id>
+		<Type>Warn</Type>
+		<Description>Field Invalid</Description>
+	</MessageData>
+	<MessageData>
+		<Id>6</Id>
+		<Type>Warn</Type>
+		<Description>Field Not Longer</Description>
+	</MessageData>
+	<MessageData>
+		<Id>7</Id>
+		<Type>Err</Type>
+		<Description>Error Unexpected</Description>
+	</MessageData>
+	<MessageData>
+		<Id>8</Id>
+		<Type>Err</Type>
+		<Description>Error Insert Data</Description>
+	</MessageData>
+	<MessageData>
+		<Id>9</Id>
+		<Type>Err</Type>
+		<Description>Error Update Data</Description>
+	</MessageData>
+	<MessageData>
+		<Id>10</Id>
+		<Type>Err</Type>
+		<Description>Error Delete Data</Description>
+	</MessageData>
+</Messages>

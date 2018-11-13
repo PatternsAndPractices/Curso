@@ -1,0 +1,10 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\bin\Debug\Test.exe.config
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\bin\Debug\Test.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\bin\Debug\Test.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\bin\Debug\MessageHelper.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\bin\Debug\MessageHelper.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\SingletonTest.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\SingletonTest.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\SingletonTest.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\Test.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\Test.pdb

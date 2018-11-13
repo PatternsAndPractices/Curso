@@ -7,7 +7,7 @@
     <ProjectGuid>{EA02F80F-5078-4FCB-A584-62160229543C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MessageHelper</RootNamespace>
+    <RootNamespace>PnP.Patterns.Singleton</RootNamespace>
     <AssemblyName>MessageHelper</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

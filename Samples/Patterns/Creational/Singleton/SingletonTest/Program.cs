@@ -1,17 +1,13 @@
-﻿using System;
+﻿using PnP.Patterns.Singleton;
+using PnP.Patterns.Singleton.XmlData;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using XmlData;
-using System.Xml.Serialization;
-using System.IO;
 
 namespace LoadXml
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MessageHelper msgHlpr = MessageHelper.GetInstance();
             int countMessages = msgHlpr.Items.Count;
@@ -23,7 +19,6 @@ namespace LoadXml
                 Console.WriteLine("Description= {0}", lstData[i].Description);
                 Console.WriteLine("------------------------------");
             }
-
 
             MessageHelper msgHlpr2 = MessageHelper.GetInstance();
             int countMessages2 = msgHlpr2.Items.Count;
@@ -38,6 +33,5 @@ namespace LoadXml
 
             Console.ReadLine();
         }
-
     }
 }

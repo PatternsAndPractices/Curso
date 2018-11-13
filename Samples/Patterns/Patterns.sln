@@ -27,7 +27,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonTest", "Creational
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{6701F71A-8A37-494C-AC27-2966868B01AA}"
 	ProjectSection(SolutionItems) = preProject
-		Creational\Singleton\Files\Messages.cs = Creational\Singleton\Files\Messages.cs
 		Creational\Singleton\Files\Messages.csv = Creational\Singleton\Files\Messages.csv
 		Creational\Singleton\Files\Messages.xlsx = Creational\Singleton\Files\Messages.xlsx
 		Creational\Singleton\Files\Messages.xml = Creational\Singleton\Files\Messages.xml

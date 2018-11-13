@@ -9,10 +9,6 @@ using System.Xml.Serialization;
 
 namespace XmlData
 {
-    // Enumeraciones
-    #region Enumeraciones
-    #endregion Enumeraciones
-
     /// <summary>
     /// Descripcion del objetivo de la clase
     /// </summary>

@@ -14,7 +14,7 @@ namespace PnP.Patterns.Singleton
 
         #region Contantes
 
-        private const string MESSAGEFILE = @"D:\Tmp\Samples\Patterns\Patterns\Files\Messages.xml";
+        private const string MESSAGEFILE = @"Messages.xml";
 
         #endregion Contantes
 

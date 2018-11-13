@@ -1,0 +1,8 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\bin\Debug\DBHelper.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\bin\Debug\DBHelper.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\bin\Debug\MySql.Data.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.pdb

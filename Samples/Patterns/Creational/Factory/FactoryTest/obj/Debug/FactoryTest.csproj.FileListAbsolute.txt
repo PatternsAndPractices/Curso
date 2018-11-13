@@ -1,0 +1,12 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\FactoryTest.exe.config
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\FactoryTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\FactoryTest.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\DBHelper.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\MySql.Data.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\bin\Debug\DBHelper.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\obj\Debug\FactoryTest.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\obj\Debug\FactoryTest.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\obj\Debug\FactoryTest.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\obj\Debug\FactoryTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\FactoryTest\obj\Debug\FactoryTest.pdb

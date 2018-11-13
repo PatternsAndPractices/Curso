@@ -40,9 +40,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBHelper", "Creational\Fact
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{213EA71B-AD1C-4945-814E-5B0BB33096F9}"
 	ProjectSection(SolutionItems) = preProject
+		Creational\Factory\Libraries\EandT.Framework.Base.Data.dll = Creational\Factory\Libraries\EandT.Framework.Base.Data.dll
 		Creational\Factory\Libraries\MySql.Data.dll = Creational\Factory\Libraries\MySql.Data.dll
 		Creational\Factory\Libraries\Oracle.ManagedDataAccess.dll = Creational\Factory\Libraries\Oracle.ManagedDataAccess.dll
-		Creational\Factory\Libraries\System.Data.SQLite.dll = Creational\Factory\Libraries\System.Data.SQLite.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyTest", "Structure\Proxy\ProxyTest\ProxyTest.csproj", "{10A4BA02-349E-4EB9-9ABF-2C4C4B9F3826}"

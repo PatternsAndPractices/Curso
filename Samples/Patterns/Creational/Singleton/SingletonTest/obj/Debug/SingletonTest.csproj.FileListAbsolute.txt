@@ -8,3 +8,4 @@ D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\Singlet
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\SingletonTest.csproj.CopyComplete
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\Test.exe
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\obj\Debug\Test.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\SingletonTest\bin\Debug\Messages.xml

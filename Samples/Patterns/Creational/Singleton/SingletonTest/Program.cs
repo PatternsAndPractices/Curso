@@ -3,7 +3,7 @@ using PnP.Patterns.Singleton.XmlData;
 using System;
 using System.Collections.Generic;
 
-namespace LoadXml
+namespace PnP.Patterns.Singleton.Test
 {
     internal class Program
     {

@@ -1,0 +1,6 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\ILoad\bin\Debug\ILoad.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\ILoad\bin\Debug\ILoad.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\ILoad\obj\Debug\ILoad.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\ILoad\obj\Debug\ILoad.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\ILoad\obj\Debug\ILoad.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\ILoad\obj\Debug\ILoad.pdb

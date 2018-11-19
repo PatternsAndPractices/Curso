@@ -1,0 +1,16 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\DecoratorTest.exe.config
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\DecoratorTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\DecoratorTest.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\ILoad.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\LoadFile.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\LogFile.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\Traceable.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\ILoad.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\LoadFile.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\LogFile.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\Traceable.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.pdb

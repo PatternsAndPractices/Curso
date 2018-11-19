@@ -48,5 +48,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ILoad\ILoad.csproj">
+      <Project>{23fcc560-32bc-42b2-96a7-97aecdc1cd57}</Project>
+      <Name>ILoad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoadFile\LoadFile.csproj">
+      <Project>{592aa146-bb3e-4de6-857a-24459a06a549}</Project>
+      <Name>LoadFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogFile\LogFile.csproj">
+      <Project>{0ba0a36c-6283-4961-9f76-9c8605b7705f}</Project>
+      <Name>LogFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Traceable\Traceable.csproj">
+      <Project>{f6e75364-237c-4e4c-b144-ce213bf71aa8}</Project>
+      <Name>Traceable</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

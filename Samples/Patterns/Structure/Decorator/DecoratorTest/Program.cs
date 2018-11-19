@@ -1,15 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PnP.Patterns.Structure.Decorator;
+using System;
 
 namespace DecoratorTest
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            string fileName = @"..\..\..\Files\Messages.xml";
+
+            LoadFile loadFile = new LoadFile();
+            string dataFile = loadFile.Load(fileName);
+
+            Console.WriteLine(dataFile);
+            Console.ReadLine();
+
+            string logFileName = @"..\..\..\Files\LogFile.Log";
+
+            LogFile logFile = new LogFile(loadFile, logFileName);
+            string resultData = logFile.Load(fileName);
+            Console.WriteLine(resultData);
+
+            Console.ReadLine();
         }
     }
 }

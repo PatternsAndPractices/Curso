@@ -1,0 +1,11 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\bin\Debug\LogFile.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\bin\Debug\LogFile.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\bin\Debug\ILoad.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\bin\Debug\Traceable.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\bin\Debug\ILoad.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\bin\Debug\Traceable.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\obj\Debug\LogFile.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\obj\Debug\LogFile.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\obj\Debug\LogFile.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\obj\Debug\LogFile.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LogFile\obj\Debug\LogFile.pdb

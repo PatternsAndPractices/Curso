@@ -1,0 +1,9 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\bin\Debug\Traceable.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\bin\Debug\Traceable.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\bin\Debug\ILoad.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\bin\Debug\ILoad.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\obj\Debug\Traceable.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\obj\Debug\Traceable.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\obj\Debug\Traceable.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\obj\Debug\Traceable.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Traceable\obj\Debug\Traceable.pdb

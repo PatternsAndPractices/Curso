@@ -1,0 +1,11 @@
+Id,Type,Description
+1,Info,Welcome 
+2,Info,Data Ok
+3,Info,Info Updated
+4,Warn,Field requeried
+5,Warn,Field Invalid
+6,Warn,Field Not Longer
+7,Err,Error Unexpected
+8,Err,Error Insert Data
+9,Err,Error Update Data
+10,Err,Error Delete Data

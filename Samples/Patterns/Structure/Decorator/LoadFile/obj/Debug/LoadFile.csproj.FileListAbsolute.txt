@@ -1,0 +1,9 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\bin\Debug\LoadFile.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\bin\Debug\LoadFile.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\bin\Debug\ILoad.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\bin\Debug\ILoad.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\obj\Debug\LoadFile.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\obj\Debug\LoadFile.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\obj\Debug\LoadFile.csproj.CopyComplete
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\obj\Debug\LoadFile.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\LoadFile\obj\Debug\LoadFile.pdb

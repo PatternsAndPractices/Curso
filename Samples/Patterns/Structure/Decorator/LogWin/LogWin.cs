@@ -10,7 +10,6 @@ namespace PnP.Patterns.Structure.Decorator
         public LogWin(ILoad component) : base(component)
         {
             EventLog evt = new EventLog();
-
             // NOTA: PARA QUE ESTA INSTRUCCION FUNCIONES SE DEBE
             // EJECUTAR VISUAL STUDIO EN MODO ADMINISTRADOR
             if (!EventLog.SourceExists(SourceName))

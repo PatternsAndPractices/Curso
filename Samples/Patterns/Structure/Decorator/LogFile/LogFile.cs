@@ -3,9 +3,6 @@ using System.IO;
 
 namespace PnP.Patterns.Structure.Decorator
 {
-    /// <summary>
-    /// Descripcion del objetivo de la clase
-    /// </summary>
     public class LogFile : Traceable
     {
         private string logFileName;
@@ -17,6 +14,8 @@ namespace PnP.Patterns.Structure.Decorator
 
         public override string Load(string fileName)
         {
+            Console.WriteLine("Ejecutando Decorador: LogFile");
+
             StreamWriter file = new StreamWriter(logFileName);
 
             file.WriteLine("{0}, Start Load", DateTime.Now.ToString("yyyy-MMM-dd HH:mm:ss.fffffff"));

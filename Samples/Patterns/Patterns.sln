@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traceable", "Structure\Deco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogFile", "Structure\Decorator\LogFile\LogFile.csproj", "{0BA0A36C-6283-4961-9F76-9C8605B7705F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogWin", "Structure\Decorator\LogWin\LogWin.csproj", "{53E5EF73-02E2-419C-8592-B2EDC36339E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +141,10 @@ Global
 		{0BA0A36C-6283-4961-9F76-9C8605B7705F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA0A36C-6283-4961-9F76-9C8605B7705F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA0A36C-6283-4961-9F76-9C8605B7705F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E5EF73-02E2-419C-8592-B2EDC36339E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E5EF73-02E2-419C-8592-B2EDC36339E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E5EF73-02E2-419C-8592-B2EDC36339E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E5EF73-02E2-419C-8592-B2EDC36339E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{592AA146-BB3E-4DE6-857A-24459A06A549} = {97109AF7-6BA5-4B56-B166-5DF90043CE2C}
 		{F6E75364-237C-4E4C-B144-CE213BF71AA8} = {97109AF7-6BA5-4B56-B166-5DF90043CE2C}
 		{0BA0A36C-6283-4961-9F76-9C8605B7705F} = {97109AF7-6BA5-4B56-B166-5DF90043CE2C}
+		{53E5EF73-02E2-419C-8592-B2EDC36339E7} = {97109AF7-6BA5-4B56-B166-5DF90043CE2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8D9801D-C54C-4869-8837-4926D850D7B5}

@@ -14,3 +14,5 @@ D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\Decorato
 D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.csproj.CopyComplete
 D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.exe
 D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\obj\Debug\DecoratorTest.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\LogWin.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Decorator\DecoratorTest\bin\Debug\LogWin.pdb

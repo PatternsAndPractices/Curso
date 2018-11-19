@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace PnP.Patterns.Structure.Decorator
 {
@@ -12,6 +8,7 @@ namespace PnP.Patterns.Structure.Decorator
     {
         public string Load(string fileName)
         {
+            Console.WriteLine("Ejecutando Componente Real: LoadFile");
 
             // Start
             string result = string.Empty;

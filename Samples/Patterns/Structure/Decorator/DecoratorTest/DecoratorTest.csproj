@@ -61,6 +61,10 @@
       <Project>{0ba0a36c-6283-4961-9f76-9c8605b7705f}</Project>
       <Name>LogFile</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LogWin\LogWin.csproj">
+      <Project>{53e5ef73-02e2-419c-8592-b2edc36339e7}</Project>
+      <Name>LogWin</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Traceable\Traceable.csproj">
       <Project>{f6e75364-237c-4e4c-b144-ce213bf71aa8}</Project>
       <Name>Traceable</Name>

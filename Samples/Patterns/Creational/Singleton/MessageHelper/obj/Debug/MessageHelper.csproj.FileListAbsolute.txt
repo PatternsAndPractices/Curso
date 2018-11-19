@@ -3,3 +3,4 @@ D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\Message
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\MessageHelper\bin\Debug\MessageHelper.pdb
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\MessageHelper\obj\Debug\MessageHelper.dll
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\MessageHelper\obj\Debug\MessageHelper.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Singleton\MessageHelper\obj\Debug\MessageHelper.csprojResolveAssemblyReference.cache

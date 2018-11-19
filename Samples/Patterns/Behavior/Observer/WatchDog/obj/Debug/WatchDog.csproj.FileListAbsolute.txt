@@ -1,0 +1,5 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\WatchDog\bin\Debug\WatchDog.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\WatchDog\bin\Debug\WatchDog.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\WatchDog\obj\Debug\WatchDog.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\WatchDog\obj\Debug\WatchDog.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\WatchDog\obj\Debug\WatchDog.pdb

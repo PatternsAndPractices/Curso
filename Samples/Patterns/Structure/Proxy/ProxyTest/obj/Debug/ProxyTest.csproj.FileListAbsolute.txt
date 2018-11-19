@@ -1,0 +1,7 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\bin\Debug\ProxyTest.exe.config
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\bin\Debug\ProxyTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\bin\Debug\ProxyTest.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\obj\Debug\ProxyTest.csprojResolveAssemblyReference.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\obj\Debug\ProxyTest.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\obj\Debug\ProxyTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\ProxyTest\obj\Debug\ProxyTest.pdb

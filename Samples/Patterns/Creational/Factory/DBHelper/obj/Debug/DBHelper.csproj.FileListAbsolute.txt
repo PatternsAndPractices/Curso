@@ -6,3 +6,4 @@ D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.csproj.CopyComplete
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.dll
 D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Creational\Factory\DBHelper\obj\Debug\DBHelper.csprojResolveAssemblyReference.cache

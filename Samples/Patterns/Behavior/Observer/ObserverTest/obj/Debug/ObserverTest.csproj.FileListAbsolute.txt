@@ -1,0 +1,6 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\ObserverTest\bin\Debug\ObserverTest.exe.config
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\ObserverTest\bin\Debug\ObserverTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\ObserverTest\bin\Debug\ObserverTest.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\ObserverTest\obj\Debug\ObserverTest.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\ObserverTest\obj\Debug\ObserverTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Observer\ObserverTest\obj\Debug\ObserverTest.pdb

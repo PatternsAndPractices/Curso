@@ -1,0 +1,5 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\XCrypter\bin\Debug\XCrypter.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\XCrypter\bin\Debug\XCrypter.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\XCrypter\obj\Debug\XCrypter.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\XCrypter\obj\Debug\XCrypter.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\XCrypter\obj\Debug\XCrypter.pdb

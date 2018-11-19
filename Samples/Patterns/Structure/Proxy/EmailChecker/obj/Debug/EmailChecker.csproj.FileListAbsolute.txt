@@ -1,0 +1,5 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\EmailChecker\bin\Debug\EmailChecker.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\EmailChecker\bin\Debug\EmailChecker.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\EmailChecker\obj\Debug\EmailChecker.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\EmailChecker\obj\Debug\EmailChecker.dll
+D:\Documents\My Repositories\Curso\Samples\Patterns\Structure\Proxy\EmailChecker\obj\Debug\EmailChecker.pdb

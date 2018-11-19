@@ -1,0 +1,6 @@
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\StrategyTest\bin\Debug\StrategyTest.exe.config
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\StrategyTest\bin\Debug\StrategyTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\StrategyTest\bin\Debug\StrategyTest.pdb
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\StrategyTest\obj\Debug\StrategyTest.csproj.CoreCompileInputs.cache
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\StrategyTest\obj\Debug\StrategyTest.exe
+D:\Documents\My Repositories\Curso\Samples\Patterns\Behavior\Strategy\StrategyTest\obj\Debug\StrategyTest.pdb

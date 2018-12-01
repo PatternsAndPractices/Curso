@@ -1,0 +1,815 @@
+DirTel.Web - WalkThroug
+========================
+1. Adicione un nuevo proyecto de Tipo ASP.Net llamado DirTel.Web
+2. Seleccione las opciones de MVC y Web Api
+3. Seleccione este nuevo proyecto como Proyecto Inicial de la solucion
+	 - Click Derecho
+	 - Proyecto Inicial
+4. Compile y ejecute el proyecto por primera vez sin modo depuracion (CTRL + F5)
+5. Navegue por la aplicacion seleccionando las opciones actuales
+6. En Viusal Studio realice los siguientes cambios
+7. Edite el archivo /Views/Shared/_Layout
+8. Cambie el texto "My ASP.NET Application" por "DirTel"
+9. Cambie el Texto "Application name" del Action Link por "DirTel"
+10. Cambie las opciones dle Menu por las siguientes:
+------------------------------------------------------------------------------------------------------------------------
+<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+<li>@Html.ActionLink("Personas", "Index", "Person")</li>
+<li>@Html.ActionLink("Telefonos", "Index", "Telephone")</li>
+<li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+<li>@Html.ActionLink("Acerca de...", "About", "Home")</li>
+------------------------------------------------------------------------------------------------------------------------
+11. Modifique la vista inicio (/Views/Home/Index.cshtml) Relizando los sigientes cambios
+------------------------------------------------------------------------------------------------------------------------
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="jumbotron">
+    <h1>DirTel</h1>
+    <p class="lead">DirTel es una aplicación de ejemplo para enseñar las ventajas del uso de patrones y buenas pacticas en .Net</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Para Comenzar</h2>
+        <p>
+            ASP.NET MVC le brinda una forma facil y poderosa, basada en patrones, para crear sitios web dinámicos que
+            permite una separación clara de responsabilidades y le da un control total sobre el desarrollo.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Aprenda mas Aquí &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Algunas Librerias</h2>
+        <p>La aplicacion de patrones y buenas practicas permiten aumentar la poductividad de los desarrolladores, facilitando el mantenimiento de las aplicaiones a futuro</p>
+        <p><a class="btn btn-default" href="http://www.dofactory.com">Aprenda mas Aquí &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Codigo Limpio</h2>
+        <p>Para que el codigo construido sea facil deentender y mantener por humanos debemos desarrollar usando las mejores tecnicas de codigo limpio.</p>
+        <p><a class="btn btn-default" href="https://sourcemaking.com/">Aprenda mas Aquí &raquo;</a></p>
+    </div>
+</div>
+------------------------------------------------------------------------------------------------------------------------
+12. Modifique la pagina de contacto (/Views/Home/Contact.cshtml) para poner sus datos personales así:
+------------------------------------------------------------------------------------------------------------------------
+@{
+    ViewBag.Title = "Contacto";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    Arquitecto de Soluciones .Net<br />
+    <abbr title="Telefono">Tel:</abbr>
+    (+57) (318) 552-6543
+</address>
+
+<address>
+    <strong>Soporte</strong> <a href="mailto:Julio,Robles@Innolutions.net">Julio,Robles@Innolutions.net</a><br />
+</address>
+------------------------------------------------------------------------------------------------------------------------
+13. Modifique la pagina de Acerca de (/Views/Home/About.cshtml) para poner algo mas de información así:
+------------------------------------------------------------------------------------------------------------------------
+@{
+    ViewBag.Title = "Acerca de";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Un ejemplo de como podemos mejorar nuestra nuestro estilo de programación</p>
+
+------------------------------------------------------------------------------------------------------------------------
+14. Modifique el controlador Inicial (/Controllers/HomeController.cs) realizando los siguientes cambios:
+------------------------------------------------------------------------------------------------------------------------
+using System.Web.Mvc;
+
+namespace DirTel.Web.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            ViewBag.Message = "Patrones y Buenas Practicas .Net";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Julo Robles";
+
+            return View();
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+15. Compile el proyecto y refresque la aplicacion en el navegador para ver los cambios
+16. Adicione la cadena de conexion en el archivo de Web.Config  despues del nodo de configuracion y antes del nodo de 
+	appsettings así:
+------------------------------------------------------------------------------------------------------------------------
+<configuration>
+------------------------------------------------------------------------------------------------------------------------
+  <connectionStrings>
+    <add name="DirTelCnx" connectionString="Data Source=prometeo/prometeo; User Id=cursonet; Password=cursonet" />
+  </connectionStrings>
+------------------------------------------------------------------------------------------------------------------------
+  <appSettings>
+------------------------------------------------------------------------------------------------------------------------
+17. Adicione las referencias a las librerias siguientes:
+	- DirTel.BL
+	- DirTel.DAL
+	- DirTel.Entities
+	- DirTel.Exceptions
+	- DirTel.SqlHelper
+	- EandT.Framework.Base.Data
+	- Oracle.ManagedDataSccess
+	
+18. Adicione el modelo para las personas heredando de la entidad correspondiente
+	- Click Derecho sobre el folder de Models
+	- Adiconar una nueva clase llamada "PersonModel.cs"
+19.	Modifique el modelo de la siguiente forma:
+------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.ComponentModel.DataAnnotations;
+using DirTel.Entities;
+
+namespace DirTel.Web.Models
+{
+    public enum SexType
+    {
+        Masculino = 'M',
+        Femenino = 'F'
+    }
+
+    public class PersonModel
+    {
+        public long ID { get; set; }
+
+        [Required(ErrorMessage = "El Nombre es requerido")]
+        [StringLength(50)]
+        [Display(Name = "Nombre")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "El Apellido es requerido")]
+        [StringLength(50)]
+        [Display(Name = "Apellido")]
+        public string LastName { get; set; }
+
+        [Required(ErrorMessage = "La fecha de Nacimiento es requerida")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Fecha Nacimiento")]
+        public DateTime BirthDay { get; set; }
+
+        [Required]
+        [StringLength(1)]
+        [Display(Name = "Sexo")]
+        public string Sex { get; set; }
+
+        [Display(Name = "Nombre Completo")]
+        public string FullName
+        {
+            get
+            {
+                return  $"{this.FirstName} {this.LastName}";
+            }
+        }
+
+        public PersonModel()
+        {
+        }
+
+        public PersonModel(Person person)
+        {
+            this.ID = person.Person_Id;
+            this.FirstName = person.FirstName;
+            this.LastName = person.LastName;
+            this.BirthDay = person.BirthDay;
+            this.Sex = person.Sex.ToString();
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+16. Adicione la vista inicial (index.cshtml) para el Modelo dado
+	- Adicione un folder llamado Person dentro del folder de Vistas (Views)
+	- Sobre este nuevo Folder haga click derecho y adicione la nueva vista 
+		* View Name = Index
+		* Template = List
+		* Model Class = PersonModel (DirTel.Web.Models)
+17. Modifique el contenido del archivo de la siguiente forma:
+------------------------------------------------------------------------------------------------------------------------
+@model IEnumerable<DirTel.Web.Models.PersonModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Personas</h2>
+
+<p>
+    @Html.ActionLink("Crear", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sex)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sex)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new {  id=item.ID }) |
+            @Html.ActionLink("Detalles", "Details", new { id = item.ID  }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+------------------------------------------------------------------------------------------------------------------------
+18.	Adicionar el Controlador para las personas "PersonController.cs"
+	- Click Derecho sobre la carpeta de controladores
+	- Adicione un Controlador con Acciones de Lectura/Escritura 
+	- Asigne el Nombre de PersonController
+19. Adicione los llamados a los Modelos, la logica de Negocio y a las Entidades 
+------------------------------------------------------------------------------------------------------------------------
+using DirTel.Web.Models;
+using DirTel.BL;
+using DirTel.Entities;
+------------------------------------------------------------------------------------------------------------------------
+20. Adicione un atributo dentro de la clase para la instancia del componente de logica de negocios al inicio de la clase
+------------------------------------------------------------------------------------------------------------------------
+private PersonBL personBL = new PersonBL();
+------------------------------------------------------------------------------------------------------------------------
+21. Adicione el metodo para Obtener los datos de lsa personas al final de la clase
+------------------------------------------------------------------------------------------------------------------------
+private IList<PersonModel> ReadAllPersons()
+{
+	IList<Person> personList = personBL.ReadAllPersons();
+
+	IList<PersonModel> personModelList = new List<PersonModel>();
+
+	int personListLength = personList.Count;
+	Person person = null;
+	for (int i = 0; i < personListLength; i++)
+	{
+		person = personList[i];
+		PersonModel personModel = new PersonModel(person);
+		personModelList.Add(personModel);
+	}
+
+	return personModelList;
+}
+------------------------------------------------------------------------------------------------------------------------
+21. Realice el llamado de la funcion dentro de la accion Index
+------------------------------------------------------------------------------------------------------------------------
+// GET: Person
+public ActionResult Index()
+{
+	IList<PersonModel> personModelList = ReadAllPersons();
+	return View(personModelList);
+}
+------------------------------------------------------------------------------------------------------------------------
+22. Compile y ejecute la aplicacion (F5) y haga click en el link de Personas para validar
+========================================================================================================================
+== CREATE ==
+========================================================================================================================
+23. Adicione la vista de creacion (Create)
+	- Click derecho sobre el folder de las Vistas de personas (Views/Person)
+	- Asigne la vista (Create)
+		* View Name = Create
+		* Template = Create
+		* Model Class = PersonModel (DirTel.Web.Models)
+24. Modifique la Vista de la siguiente forma:
+------------------------------------------------------------------------------------------------------------------------
+@model DirTel.Web.Models.PersonModel
+
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h2>Crear</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>PersonModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthDay, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BirthDay, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.BirthDay, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sex, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Sex, ViewBag.SexList as SelectList, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Sex, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+------------------------------------------------------------------------------------------------------------------------
+25. Adicione el metodo privado para llenar los datos para el Sexo al final del controlador
+------------------------------------------------------------------------------------------------------------------------
+private void PopulateSexDropDownList()
+{
+	List<SelectListItem> sexList = new List<SelectListItem>();
+
+	string [] sexNames = Enum.GetNames(typeof(SexType));
+
+	int sexLength = sexNames.Length;
+	for (int i =  0; i < sexLength; i++)
+	{
+		sexList.Add(new SelectListItem()
+		{
+			Value = (sexNames[i] == "Femenino" )? "F": "M",
+			Text = sexNames[i]
+		});
+	}
+
+	ViewBag.SexList = new SelectList(sexList, "Value", "Text");
+}
+------------------------------------------------------------------------------------------------------------------------
+26. Adicione un constructor al controlador para iniciar datos
+------------------------------------------------------------------------------------------------------------------------
+public PersonController()
+{
+	this.PopulateSexDropDownList();
+}
+------------------------------------------------------------------------------------------------------------------------
+27. Adicione el Metodo CrearPersona al final de la clase controlador asi:
+------------------------------------------------------------------------------------------------------------------------
+
+private void CreatePerson(PersonModel personModel)
+{
+	Person person = new Person(
+		personModel.FirstName,
+		personModel.LastName,
+		personModel.BirthDay,
+		personModel.Sex[0]
+	);
+
+	personBL.CreatePerson(person);
+}	
+
+------------------------------------------------------------------------------------------------------------------------
+28. Modifique de la accion Crear, que es de tipo POST para que realice la adicion de los datos asi:
+------------------------------------------------------------------------------------------------------------------------
+
+// POST: Person/Create
+[HttpPost]
+public ActionResult Create(PersonModel personModel)
+{
+	try
+	{
+		if ( ModelState.IsValid )
+		{
+			CreatePerson(personModel);
+		}
+		return RedirectToAction("Index");
+	}
+	catch
+	{
+		return View();
+	}
+}
+
+========================================================================================================================
+== EDIT ==
+========================================================================================================================
+29. Adicione la vista de Edicion (Edit)
+	- Click derecho sobre el folder de las Vistas de personas (Views/Person)
+	- Asigne la vista (Edit)
+		* View Name = Edit
+		* Template = Edit
+		* Model Class = PersonModel (DirTel.Web.Models)
+30. Modifique la Vista de la siguiente forma:
+------------------------------------------------------------------------------------------------------------------------
+@model DirTel.Web.Models.PersonModel
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>PersonModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthDay, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BirthDay, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.BirthDay, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sex, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Sex, ViewBag.SexList as SelectList, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Sex, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Aceptar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+------------------------------------------------------------------------------------------------------------------------
+31. Adicione el Metodo ReadPersonById a la Clase PersonDAL
+------------------------------------------------------------------------------------------------------------------------
+
+/// <summary>
+/// Obtener todos los datos de una persona
+/// </summary>
+/// <param name="person_Id">Id de la persona</param>
+/// <returns>Los datos de la persona</returns>
+public Person ReadPersonById(long person_Id)
+{
+
+	// Establecer la conexion a la base de datos
+	// db = new DataBase(ProviderType.Oracle, strCnx);
+
+	db = DataBase.GetInstance(ProviderType.Oracle, strCnx);
+
+	// Crear la Conexion
+	cnx = db.CreateAndOpenConnection();
+
+	// Crear el Comando especial para ORACLE
+	OracleCommand cmd = (OracleCommand)db.CreateCommand(cnx, CommandType.StoredProcedure, "DA_PERSONS_PKG.ReadPersonById");
+
+	// Asignar los parametros
+	db.AddInParameter(cmd, "pm_Person_Id", person_Id, DbType.Int64);
+
+	// Crear el Parametro enlazado al Cursor Referenciado
+	OracleParameter paramRefCursor = db.AddCommandRefCurParameter(cmd, "cur_Persons", ParameterDirection.Output, null);
+
+	// Ejecutar el query
+	db.ExecuteNonQuery(cnx, cmd);
+
+	// Limpiar la lista
+
+	string strData = string.Empty;
+
+	// Obtener el Cursor Referenciado
+	OracleRefCursor refCur = (OracleRefCursor)paramRefCursor.Value;
+	// Obtener el DataReader desde el cursor referenciado
+	OracleDataReader dr = refCur.GetDataReader();
+
+	// Ciclo para Recorer los datos
+	dr.Read();
+
+	// Variable Person para obtener los datos
+	Person person = new Person();
+
+	// Leer los valores
+	person.Person_Id = Convert.ToInt64(dr["Person_Id"].ToString());
+	person.FirstName = dr["FirstName"].ToString();
+	person.LastName = dr["LastName"].ToString();
+	person.BirthDay = Convert.ToDateTime(dr["BirthDay"].ToString());
+	person.Sex = dr["Sex"].ToString()[0];
+
+	// Cerar la Conexion
+	db.CloseConnection(cnx);
+
+	// retornar la informacion
+	return person;
+}
+
+------------------------------------------------------------------------------------------------------------------------
+32. Adicione el Metodo ReadPersonById a la clase PersonBL
+------------------------------------------------------------------------------------------------------------------------
+/// <summary>
+/// Obtener todos los datos de la persona segun su identificador
+/// </summary>
+/// <param name="person_Id">Identificador de la persona</param>
+/// <returns>los datos de la persona</returns>
+public Person ReadPersonById(long person_Id)
+{
+	// Crear el Objeto de Datos
+	PersonDAL personDAL = new PersonDAL();
+
+	// Ejecutar el Comando
+	Person person = personDAL.ReadPersonById(person_Id);
+
+	return person;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------
+33. Adicionar el medoto de obtener persona por identificador en en controlador PersonController.cs
+------------------------------------------------------------------------------------------------------------------------
+
+private PersonModel ReadPersonById(long person_Id)
+{
+	Person person = personBL.ReadPersonById(person_Id);
+
+	PersonModel personModel = new PersonModel(person);
+
+	return personModel;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------
+34. Modificar la funcion de edicion del controlador, resolviendo las dependencias de HttpStatusCode adiconando tem.Net
+------------------------------------------------------------------------------------------------------------------------
+// GET: Person/Edit/5
+public ActionResult Edit(long? id)
+{
+	if (id == null)
+	{
+		return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+	}
+
+	long person_Id = id ?? 0;
+	PersonModel personModel = this.ReadPersonById(person_Id);
+
+	if (personModel == null)
+	{
+		return HttpNotFound();
+	}
+
+	return View(personModel);
+}
+------------------------------------------------------------------------------------------------------------------------
+35. Adicionar la Funcion de Actualizar persona al final del controlador
+------------------------------------------------------------------------------------------------------------------------
+private void UpdatePerson(long person_Id, PersonModel personModel)
+{
+	Person person = new Person(
+		personModel.FirstName,
+		personModel.LastName,
+		personModel.BirthDay,
+		personModel.Sex[0]
+		);
+
+	person.Person_Id = person_Id;
+
+	personBL.UpdatePerson(person);
+}
+
+------------------------------------------------------------------------------------------------------------------------
+36. Modificar el metodo de confirmacion de actualizacion del controlador
+------------------------------------------------------------------------------------------------------------------------
+// POST: Person/Edit/5
+[HttpPost]
+public ActionResult Edit(long id, PersonModel personModel)
+{
+	try
+	{
+		if (ModelState.IsValid)
+		{
+			this.UpdatePerson(id, personModel);
+		}
+
+		return RedirectToAction("Index");
+	}
+	catch
+	{
+		return View();
+	}
+}
+========================================================================================================================
+== DELETE ==
+========================================================================================================================
+37. Adicione la vista de Eliminar (Delete)
+	- Click derecho sobre el folder de las Vistas de personas (Views/Person)
+	- Asigne la vista (Delete)
+		* View Name = Delete
+		* Template = Delete
+		* Model Class = PersonModel (DirTel.Web.Models)
+38. Modifique la Vista de la siguiente forma:
+------------------------------------------------------------------------------------------------------------------------
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Delete</h2>
+
+<h3>Seguro desea elimnar este registro?</h3>
+<div>
+    <h4>Persona</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+
+------------------------------------------------------------------------------------------------------------------------
+39. Modifique el metodo Delete para mostrar los datos a eliminar
+------------------------------------------------------------------------------------------------------------------------
+// GET: Person/Delete/5
+public ActionResult Delete(long? id)
+{
+	if (id == null)
+	{
+		return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+	}
+
+	long person_Id = id ?? 0;
+	PersonModel personModel = this.ReadPersonById(person_Id);
+
+	if (personModel == null)
+	{
+		return HttpNotFound();
+	}
+
+	return View(personModel);
+}
+
+------------------------------------------------------------------------------------------------------------------------
+40. Adicione el Metodo de Eliminar para Borar los datos de la base de datos
+------------------------------------------------------------------------------------------------------------------------
+private void DeletePerson(long person_Id)
+{
+	personBL.DeletePerson(person_Id);
+}
+
+------------------------------------------------------------------------------------------------------------------------
+41. Modifique el metodo de Confirmacion del borrado en el controlador
+------------------------------------------------------------------------------------------------------------------------
+// POST: Person/Delete/5
+[HttpPost, ActionName("Delete")]
+[ValidateAntiForgeryToken]
+public ActionResult Delete(long id)
+{
+	try
+	{
+		if (ModelState.IsValid)
+		{
+			this.DeletePerson(id);
+		}
+
+		return RedirectToAction("Index");
+	}
+	catch
+	{
+		return View();
+	}
+}
+------------------------------------------------------------------------------------------------------------------------
+42. compile y ejecute de nuevo el proyecto para probrar todas las opciones
+
+
+
